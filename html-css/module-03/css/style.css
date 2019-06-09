@@ -11,7 +11,7 @@ body{
 /* Header style */
 
 .header_block{
-    margin-top: 72px;
+    padding-top: 72px;
     margin-bottom: 98px;
 }
 
@@ -22,13 +22,16 @@ body{
 
 .menu li{
     display: inline-block;
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-right: 120px;
 }
 
-.menu li:hover,
-.menu li:focus{
-    background-color: coral;
+.menu li:last-child{
+    margin-right: 0px;
+}
+
+.menu a:hover,
+.menu a:focus{
+    color: #03a9f4;
 }
 
 .menu a{
@@ -38,10 +41,6 @@ body{
     text-transform: uppercase;
 }
 
-.menu .active{
-    color: #03a9f4;
-}
-
 /* Main style */
 
 .main_block{
@@ -49,10 +48,9 @@ body{
 }
 
 .block_data{
-width: 420px;
-margin-bottom: 134px;
-display: inline-block;
-vertical-align: top;
+    width: 420px;
+    margin-bottom: 134px;
+    display: inline-block;
 }
 
 .block_data:nth-child(odd){
@@ -66,8 +64,6 @@ vertical-align: top;
 }
 
 .block_data img{
-    width: 420px;
-    height: 280px;
     margin-bottom: 30px;
 }
 
@@ -91,16 +87,19 @@ vertical-align: top;
     line-height: 24px;
 }
 
-/*Style  Footer */
-
-.footer_block{
+.button_block{
     text-align: center;
     margin-bottom: 70px;
 }
 
-.footer_btn{
+.btn{
     width: 162px;
     height: 60px;
     color: #626262;
     font-size: 20px;
+}
+
+.button_block button:hover,
+.button_block button:focus{
+    color: #03a9f4;
 }
