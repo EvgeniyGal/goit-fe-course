@@ -98,6 +98,7 @@ main h2::after{
     background-color: #e8effc;
     margin-right: 30px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .blockFP:hover .hoverBlockDescrip{
@@ -192,7 +193,7 @@ main h2::after{
     width: 160px;
     height: 52px;
     background-color: rgb(78, 198, 171);
-    border-radius: 3px;
+    border-radius: 5px;
     font-style: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
