@@ -1,29 +1,33 @@
-.wrap{
+.wrap {
     width: 1170px;
     margin: 0 auto;
+}
+
+.hiden {
+    font-size: 0px;
 }
 
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 /* Style manu */
 
-nav a{
+nav a {
     text-decoration: none;
 }
 
-nav li:first-child{
+nav li:first-child {
     float: left;
 }
 
-nav li:not(:first-child){
+nav li:not(:first-child) {
     float: right;
 }
 
-nav li:first-child a{
+nav li:first-child a {
     padding-top: 38px;
     color: #555252;
     font-size: 30px;
@@ -33,11 +37,11 @@ nav li:first-child a{
     margin-left: 30px;
 }
 
-nav li:first-child{
+nav li:first-child {
     padding-top: 38px;
 }
 
-nav li:not(:first-child) a{
+nav li:not(:first-child) a {
     color: #0f0101;
     padding-top: 42px;
     font-size: 14px;
@@ -47,19 +51,19 @@ nav li:not(:first-child) a{
     margin-left: 35px;
 }
 
-nav li:not(:first-child){
+nav li:not(:first-child) {
     padding-top: 42px;
 }
 
-nav li:nth-child(2) a{
+nav li:nth-child(2) a {
     margin-right: 30px;
 }
 
-nav li:not(:first-child) a:hover{
+nav li:not(:first-child) a:hover {
     color: #1abc9c;
 }
 
-nav li:first-child::first-letter{
+nav li:first-child::first-letter {
     color: #1abc9c;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -68,8 +72,8 @@ nav li:first-child::first-letter{
 
 /*Style content */
 
-main h2{
-    padding-top: 120px;
+main h2 {
+    padding-top: 104px;
     text-align: center;
     font-size: 48px;
     line-height: 32px;
@@ -79,7 +83,7 @@ main h2{
     font-weight: 900;
 }
 
-main h2::after{
+main h2::after {
     display: block;
     content: "";
     width: 164px;
@@ -91,9 +95,8 @@ main h2::after{
     margin-bottom: 90px;
 }
 
-.blockFP{
+.blockFP {
     width: 255px;
-    height: 322px;
     float: left;
     background-color: #e8effc;
     margin-right: 30px;
@@ -101,44 +104,35 @@ main h2::after{
     margin-bottom: 30px;
 }
 
-.blockFP:hover .hoverBlockDescrip{
-    background-color: #1abc9c;
+.blockFP:hover .hoverH3 {
+    background-color:rgb(26, 188, 156);
 }
 
-.blockFP:hover .hoverBlockPrice{
-    background-color: #6dd4bf;
+.blockFP:hover .hoverPrice {
+    background-color: rgba(26, 188, 1560, 0.439);
 }
 
-.blockFP:nth-of-type(4n-3){
+main section:first-of-type a:nth-of-type(4n-3) .blockFP {
     margin-left: 30px;
 }
 
-.blockDescrip{
-    width: 200px;
-    height: 42px;
-    background-color: #323232;
+.blockFP h3 {
+    width: 201px;
+    background-color: rgb(50, 50, 50);
     float: left;
-}
-
-.blockPrice{
-    width: 55px;
-    height: 42px;
-    background-color: #8c8c8c;
-    float: right;
-}
-
-
-.blockFP h3{
-    padding-left: 14px;
     font-size: 18px;
     line-height: 44px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #ffffff;
     text-transform: uppercase;
+    text-indent: 14px;
 }
 
-.blockFP p{
+.blockFP p {
+    width: 54px;
+    background-color: rgba(50, 50, 50, 0.439);
+    float: right;
     text-align: center;
     font-size: 18px;
     line-height: 44px;
@@ -148,15 +142,14 @@ main h2::after{
     text-transform: uppercase;
 }
 
-.blockNews{
+.blockNews {
     width: 350px;
-    height: 500px;
     float: left;
     margin-right: 30px;
     margin-bottom: 44px;
 }
 
-.blockNews h4{
+.blockNews h3 {
     padding-top: 24px;
     font-size: 18px;
     line-height: 26px;
@@ -165,7 +158,7 @@ main h2::after{
     font-weight: 700;
 }
 
-.blockNews h4::after{
+.blockNews h3::after {
     content: '';
     display: block;
     width: 136px;
@@ -175,11 +168,11 @@ main h2::after{
     background-clip: content-box;
 }
 
-.blockNews:nth-of-type(3n-2){
+.blockNews:nth-of-type(3n-2) {
     margin-left: 30px;
 }
 
-.blockNews p{
+.blockNews p {
     padding-top: 38px;
     font-size: 14px;
     line-height: 26px;
@@ -189,18 +182,26 @@ main h2::after{
     margin-bottom: 26px;
 }
 
-.blockNews button{
+.button {
     width: 160px;
-    height: 52px;
+    line-height: 52px;
     background-color: rgb(78, 198, 171);
-    border-radius: 5px;
+    border-radius: 3px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.button p{
+    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
+    padding: 0px;
+    margin: 0px;
     color: #ffffff;
-    cursor: pointer;
 }
-.blockNews button:hover{
+
+.button:hover {
     background-color: rgb(44, 109, 95);
 }
