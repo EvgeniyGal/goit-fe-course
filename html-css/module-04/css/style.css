@@ -37,10 +37,13 @@ h1::first-letter {
   font-weight: 900;
 }
 
-/* Style manu */
+/* Style menu */
+
+nav {
+  float: right;
+}
 
 nav ul {
-  float: right;
   vertical-align: middle;
   text-align: right;
   line-height: 30px;
@@ -48,7 +51,11 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0px;
 }
 
 nav li a {
@@ -84,17 +91,18 @@ main h2::after {
   background-color: #1abc9c;
   padding-top: 44px;
   background-clip: content-box;
-  margin: 0 auto;
-  margin-bottom: 90px;
+  margin: 0px auto 90px auto;
+}
+
+main section:first-of-type a{
+  float: left;
 }
 
 .blockFP {
   width: 255px;
-  float: left;
   background-color: rgb(233, 240, 253);
-  margin-right: 30px;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin: 0px 30px 30px 0px;
 }
 
 main section:first-of-type a:nth-of-type(4n) .blockFP {
