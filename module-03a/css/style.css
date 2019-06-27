@@ -1,56 +1,69 @@
-body{
-    font-family: 'Playfair Display', serif;
+.conteiner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 98%;
+  margin: 10px auto;
+  align-content: stretch;
 }
 
-.menuitem{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 150px;
-    text-align: center;
-    text-decoration: none;    
+.child {
+    /* height: 100px; */
+    /* width: 100px;
+    */
+    flex-grow: 1;
+    flex-basis: 350px;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: midle;
+  line-height: 100px;
 }
 
-a.menuitem:hover{
-    color: seagreen;
+.item001 {
+  background-color: blueviolet;
 }
-.menu{
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 620px;
+.item002 {
+  background-color: red;
 }
-
-.leftcolum{
-    width: 470px;
-    margin: 10px;
-    }
-
-h2{
-    font-weight: bold;
-    font-size: 36px;
-    width: 420px;
-    margin-left: auto;
-    margin-right: auto;
+.item003 {
+  background-color: gold;
 }
-
-p:first-letter{
-    color: #03a9f4;
-    font-size: 30px;
+.item004 {
+  background-color: green;
+}
+.item005 {
+  background-color: blue;
+}
+.item006 {
+  background-color: brown;
+}
+.item007 {
+  background-color: yellow;
+}
+.item008 {
+  background-color: darkgreen;
 }
 
-div>img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 420px;
+.Rectangle_14 {
+    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    position: absolute;
+    left: 350px;
+    top: 970px;
+    width: 380px;
+    height: 470px;
+    z-index: 19;
   }
 
-div{
-    align-content: center;
-}
-
-div>p{
-    width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-}
+  .Rectangle_14_copy {
+    background-color: rgb(149, 225, 211);
+    position: absolute;
+    left: 360px;
+    top: 980px;
+    width: 380px;
+    height: 470px;
+    z-index: 18;
+  }
+  

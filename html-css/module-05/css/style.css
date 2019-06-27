@@ -1,3 +1,7 @@
+@import url("syle_reset.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,900&display=swap");
+@import url("../pe-icon-7-stroke/css/pe-icon-7-stroke.css");
+
 .wrap {
   width: 1110px;
   margin: 0 auto;
@@ -9,19 +13,16 @@
   clear: both;
 }
 
-a {
-  text-decoration: none;
-}
-
-header {
+.header_style {
   padding-top: 36px;
+  margin-bottom: 30px;
 }
 
-h1 {
+.style_logo {
   float: left;
 }
 
-h1 a {
+.style_logo_link {
   color: #555252;
   font-size: 30px;
   line-height: 32px;
@@ -30,31 +31,35 @@ h1 a {
   font-weight: 300;
 }
 
-h1::first-letter {
+.style_logo::first-letter {
   color: #1abc9c;
   font-size: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
 
-/* Style manu */
+/* Style menu */
 
-nav {
+.nav_style {
   float: right;
 }
 
-nav ul {
+.menu_style {
   vertical-align: middle;
   text-align: right;
   line-height: 32px;
 }
 
-nav li {
+.menu_item_style {
   display: inline-block;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
-nav li a {
+.menu_item_style:last-child {
+  margin-right: 0px;
+}
+
+.menu_link {
   color: #0f0101;
   font-size: 14px;
   text-transform: uppercase;
@@ -62,24 +67,24 @@ nav li a {
   font-weight: 700;
 }
 
-nav li a:hover {
+.menu_link:hover {
   color: #1abc9c;
 }
 
 /*Styling slider*/
 
-.slider {
+.slider_conteiner {
   position: relative;
-  padding-top: 30px;
-  height: 600px;
+  margin-bottom: 110px;
 }
 
-.buttonBlok {
-  position: relative;
-  height: 600px;
+.slider_conteiner_item {
+  font-size: 0px;
+  /* Иначе добавляет ненужный height 3px */
 }
 
-.buttonSlider {
+.button_slider {
+  display: block;
   position: absolute;
   width: 104px;
   height: 104px;
@@ -89,51 +94,28 @@ nav li a:hover {
   padding: 0px;
   font-size: 100px;
   text-align: center;
-  vertical-align: middle;
   color: #fff;
   background-color: rgb(26, 188, 156);
-  cursor: pointer;
 }
 
-.slider .prev {
+.prev {
   left: 0px;
-  display: block;
 }
 
-.slider .next {
+.next {
   right: 0px;
-  display: block;
 }
 
-.imageHolder {
+.description_conteiner {
   position: absolute;
-  top: 30px;
-  left: 0px;
-  width: 100%;
-}
-
-.imageHolderItem {
-  font-size: 0px;
-}
-
-.imageHolderItem img {
-  height: 600px;
-  width: 100%;
-  min-width: 1110px;
-  object-fit: cover;
-}
-
-.absCenter {
-  position: absolute;
-  top: 200px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin: 0 auto;
   width: 790px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
 }
 
-.imageHolderItem h2 {
+.tytle_slide_image {
   font-size: 60px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -141,9 +123,10 @@ nav li a:hover {
   text-transform: uppercase;
   line-height: 82px;
   text-align: left;
+  margin-bottom: 10px;
 }
 
-.imageHolderItem p {
+.description_slide_image {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -155,13 +138,11 @@ nav li a:hover {
 
 /* Style main */
 
-main{
-  padding-top: 110px;
-  font-size: 0px;
-  padding-bottom: 100px;
+.main_style {
+  margin-bottom: 100px;
 }
 
-main h2 {
+.main_title {
   font-size: 48px;
   line-height: 32px;
   color: #515151;
@@ -172,7 +153,7 @@ main h2 {
   margin-bottom: 90px;
 }
 
-main h2::after {
+.main_title::after {
   display: block;
   content: "";
   width: 164px;
@@ -183,24 +164,28 @@ main h2::after {
   margin: 0 auto;
 }
 
-.collectionItem {
+.collection_conteiner {
+  font-size: 0px;
+  /* Иначе добавляет ненужный weight 2px */
+}
+
+.collection_item {
   position: relative;
   display: inline-block;
   width: 255px;
   background-color: #e8effc;
   margin-right: 30px;
-  font-size: 0px;
 }
 
-.footCollectionItem {
-  background-color: rgb(50, 50, 50);
-}
-
-.collectionItem:nth-of-type(4n) {
+.collection_item:nth-of-type(4n) {
   margin-right: 0px;
 }
 
-.footCollectionItem h3 {
+.foot_collection_item {
+  background-color: rgb(50, 50, 50);
+}
+
+.foot_collection_item_title {
   width: 201px;
   float: left;
   font-size: 18px;
@@ -225,15 +210,15 @@ main h2::after {
   text-transform: uppercase;
 }
 
-.collectionItem:hover .hoverfootCollectionItem {
+.collection_item:hover .hover_foot_collection_item {
   background-color: rgb(26, 188, 156);
 }
 
-.collectionItem:hover .hoverBlockAdd {
-  display: block;
+.collection_item:hover .hover_block_add {
+  display: inline-block;
 }
 
-.blockBackGround {
+.block_background {
   display: none;
   position: absolute;
   width: 235px;
@@ -241,69 +226,59 @@ main h2::after {
   top: 0px;
   left: 0px;
   border-width: 10px;
-  border-color: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0.549);
   border-style: solid;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.549;
+  background-color: rgba(0, 0, 0, 0.549);
 }
 
-.buttonStylyAdd {
-  display: none;
+.button_block {
   position: absolute;
-  top: 90px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.button_style_add {
+  display: inline-block;
   padding: 0px;
   width: 50px;
-  height: 50px;
   border: 1px solid #fff;
   box-sizing: border-box;
   background-color: transparent;
   font-size: 30px;
+  line-height: 48px;
   color: rgb(255, 255, 255);
   cursor: pointer;
+  margin: 0px 8px 8px 0px;
 }
 
-.buttonStylyAdd:hover {
+.button_style_add:nth-child(3) {
+  margin-right: 0px;
+}
+
+.button_style_add:hover {
   background-color: rgb(26, 188, 156);
   border-color: rgb(26, 188, 156);
 }
 
-.heart {
-  left: 44px;
-}
-
-.choose {
-  left: 102px;
-}
-
-.clock {
-  left: 160px;
-}
-
 .cart {
   width: 166px;
-  left: 44px;
-  top: 148px;
+  margin: 0px;
   background-color: rgb(50, 50, 50);
 }
 
-.cart{
+.text_button_add {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-}
-
-.cart::first-letter{
-  font-size: 30px;
-  vertical-align: middle;
+  line-height: 14px;
+  position: relative;
+  bottom: 8px;
 }
 
 /* Footer style */
 
 .footStyle {
-  display: inline-block;
-  height: 88px;
-  width: 100%;
-  vertical-align: middle;
   line-height: 88px;
   text-align: center;
   background-color: rgb(50, 50, 50);
@@ -313,6 +288,6 @@ main h2::after {
   font-weight: 400;
 }
 
-.footStyle a {
+.foot_link {
   color: #46bfa9;
 }
