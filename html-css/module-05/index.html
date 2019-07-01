@@ -35,14 +35,16 @@
       </nav>
     </header>
 
-    <ul class="slider_conteiner wrap">
-      <li class="slider_conteiner_item">
-        <img
-          width="1110"
-          height="600"
-          src="img/slider1.jpg"
-          alt="First slide image"
-        />
+    <div class="slider_conteiner">
+      <ul>
+        <li class="slider_conteiner_item">
+          <img
+            src="img/slider1.jpg"
+            alt="First slide image"
+          />
+        </li>
+      </ul>
+      <div class="slider-controls">
         <div class="description_conteiner">
           <h2 class="tytle_slide_image">AFFORDABLE PARIS TOURS</h2>
           <p class="description_slide_image">
@@ -51,8 +53,9 @@
         </div>
         <button class="button_slider prev pe-7s-angle-left"></button>
         <button class="button_slider next pe-7s-angle-right"></button>
-      </li>
-    </ul>
+      </div>
+    </div>
+
 
     <main class="main_style wrap">
       <h2 class="main_title">NEW COLLECTION</h2>
@@ -152,9 +155,11 @@
       </ul>
     </main>
 
-    <footer class="footStyle wrap">
-      All Rights Reserved © Dokan | Designed
-      <a class="foot_link" href="#">ThemenGraph</a>
+    <footer class="footStyle">
+      <div class="wrap">
+        All Rights Reserved © Dokan | Designed
+        <a class="foot_link" href="#">ThemenGraph</a>
+      </div>
     </footer>
   </body>
 </html>

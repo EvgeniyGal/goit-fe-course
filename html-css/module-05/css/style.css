@@ -78,6 +78,20 @@
   margin-bottom: 110px;
 }
 
+.slider-controls{
+  position: absolute;
+  width: 1110px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.slider-image{
+  object-fit: cover;
+}
+
 .slider_conteiner_item {
   font-size: 0px;
   /* Иначе добавляет ненужный height 3px */
