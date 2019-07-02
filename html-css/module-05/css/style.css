@@ -80,6 +80,7 @@
 
 .slider__image{
   width: 100%;
+  object-fit: cover;
 }
 
 .slider__list::after{
