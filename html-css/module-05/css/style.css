@@ -78,7 +78,15 @@
   margin-bottom: 110px;
 }
 
-.slider-controls{
+.shading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 2, 0.522);
+}
+
+.slider-controls {
   position: absolute;
   width: 1110px;
   bottom: 0px;
@@ -88,7 +96,7 @@
   margin: auto;
 }
 
-.slider-image{
+.slider-image {
   object-fit: cover;
 }
 
