@@ -24,23 +24,23 @@
   text-decoration: none;
 }
 
-.header__menu__item {
+.header__menu-item {
   display: inline-block;
   margin-right: 4.2rem;
 }
 
-.header__menu__item:last-child {
+.header__menu-item:last-child {
   margin-right: 0;
 }
 
-.header__menu__link {
+.header__menu-link {
   font: 14px "MontserratRegular";
   color: #222222;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.header__menu__link:hover {
+.header__menu-link:hover {
   color: #fed136;
 }
 
@@ -56,7 +56,7 @@
   margin-bottom: 80px;
 }
 
-.main__title_span {
+.main__title__span {
   padding-top: 22px;
   display: block;
   font: 16px "DroidSerifItalic";
@@ -74,7 +74,7 @@
   text-align: center;
 }
 
-.main__content__item__img {
+.main__content__item__img-box {
   position: relative;
   box-sizing: border-box;
   display: inline-block;
@@ -85,7 +85,7 @@
   margin-bottom: 22px;
 }
 
-.main__content__item__img > img {
+.main__content__item__img-box > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -134,13 +134,13 @@
   padding-top: 20px;
 }
 
-.contacts__inputs_cont {
+.contacts__inputs-cont {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.contacts__input__box {
+.contacts__input-box {
   width: 455px;
 }
 
@@ -200,4 +200,5 @@
   font: 18px MontserratBold;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
+  cursor: pointer;
 }
