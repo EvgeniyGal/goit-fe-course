@@ -14,15 +14,9 @@
 }
 
 .logo_link_style {
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+  font: 700 30px "Montserrat", sans-serif;
   color: #95e1d3;
-  font-weight: 700;
   text-decoration: none;
-}
-
-.nav_container {
-  margin-left: auto;
 }
 
 .menu {
@@ -40,38 +34,33 @@
 
 .menu_link {
   text-decoration: none;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font: 14px "Montserrat", sans-serif;
   color: #95e1d3;
   text-transform: uppercase;
   padding-bottom: 12px; /*для красного подчеркивания*/
-  transition: color, box-shadow;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
   box-shadow: 0 0px 0px #f38181;
 }
 
 .menu_link:hover {
   color: #f38181;
   box-shadow: 0 3px 0px #f38181;
+  transition: color, box-shadow 0.2s linear;
 }
 
 .main_style {
   padding-top: 134px;
+  margin-bottom: 82px;
 }
 
 .title_style {
-  font-size: 24px;
-  font-family: "Kaushan Script", sans-serif;
+  font: 24px "Kaushan Script", sans-serif;
   color: rgb(51, 51, 51);
   text-align: center;
 }
 
 .title_span_style {
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+  font: 700 30px "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
-  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -95,11 +84,13 @@
   justify-content: space-around;
 }
 
+.section_service{
+  margin-bottom: 102px;
+}
+
 .service_item {
   display: flex;
-  align-items: flex-start;
   flex-basis: 380px;
-  margin-bottom: 102px;
 }
 
 .service_icon {
@@ -112,25 +103,20 @@
 }
 
 .service_title {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font: 14px "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
   text-transform: uppercase;
   margin-bottom: 17px;
 }
 
 .text_service {
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font: 15px "Roboto", sans-serif;
   color: rgb(153, 153, 153);
   line-height: 24px;
-  font-weight: 400;
 }
 
 .team_text_descr {
-  font-size: 15px;
-  font-family: "Roboto";
-  font-weight: 300;
+  font: 300 15px "Roboto", sans-serif;
   text-align: center;
   color: rgb(153, 153, 153);
   line-height: 24px;
@@ -141,20 +127,50 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 82px;
 }
 
 .team_block {
-  font-size: 0px;
-  /* Иначе добавляет ненужные пиксели */
+  display: flex;
+  flex-direction: column;
+}
+
+.team__block__img {
+  display: block;
+}
+
+.team__block__conteiner {
+  position: relative;
+  background-color: rgb(149, 225, 211);
+}
+
+.team_block:hover .team_block_img_hover {
+  transform: translate(-10px, -10px);
+  transition: transform 0.2s linear;
+}
+
+.temm_gradient {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  top: 0;
+  background-image: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  opacity: 0;
+}
+
+.team_block:hover .team_block_gradient_trans {
+  transform: translate(-10px, -10px);
+  opacity: 1;
+  transition: transform, opacity 0.2s linear;
 }
 
 .block_buttons_holder {
-  width: 227px;
-  z-index: 2;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: 0px;
-  left: 0px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -167,15 +183,11 @@
   background-color: rgb(252, 227, 138);
   text-align: center;
   line-height: 56px;
-  border-style: solid;
-  border-right-width: 1px;
-  border-right-color: rgba(243, 129, 129, 0.502);
-  transition: background-color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  border: 1px solid rgba(243, 129, 129, 0.502);
 }
 
 .button_folow_us:hover {
+  transition: background-color 0.2s linear;
   background-color: #95e1d3;
 }
 
@@ -187,49 +199,8 @@
   vertical-align: middle;
 }
 
-.team_block:hover .team_block_trans {
-  transform: translate(-10px, -10px);
-}
-
-.team_block:hover .team_block_gradient_trans {
-  transform: translate(-10px, -10px);
-  opacity: 1;
-}
-
-.team_block_background {
-  position: relative;
-  width: 380px;
-  height: 470px;
-  background-color: rgb(149, 225, 211);
-}
-
-.team_block_img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transition: transform;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-}
-
-.temm_gradient {
-  position: relative;
-  height: 470px;
-  z-index: 3;
-  transition: transform, opacity;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  background-image: linear-gradient(
-    0deg,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
-  );
-  opacity: 0;
-}
-
 .title_block_team {
-  font-size: 14px;
-  font-family: "Montserrat";
+  font: 14px "Montserrat";
   color: rgb(51, 51, 51);
   text-transform: uppercase;
   text-align: center;
@@ -238,31 +209,26 @@
 
 .title_block_team_descr {
   display: block;
-  font-size: 15px;
-  font-family: "Roboto";
+  font: italic 300 15px "Roboto", sans-serif;
   text-transform: none;
-  font-weight: 300;
-  color: rgb(153, 153, 153);
-  line-height: 24px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: rgb(51, 51, 51);
+  color: #999999;
   padding-top: 14px;
 }
 
 .footer_style {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 0px 10px 0px;
-  font-size: 0px;
-  border-top-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-style: solid;
+  border-top: 1px solid rgb(229, 229, 229);
+}
+
+.form_slyle{
+  display: flex;
 }
 
 .footer_text {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font: 14px "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
   text-align: center;
 }
@@ -272,39 +238,27 @@
   color: #f38181;
 }
 
-.form_style {
-  margin-left: auto;
-}
-
 .input_style {
   width: 230px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(231, 231, 231);
-  line-height: 40px;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  border: 1px solid rgb(231, 231, 231);
+  font: 15px "Roboto", sans-serif;
   color: rgb(153, 153, 153);
   line-height: 38px;
-  font-weight: 400;
-  padding: 0px;
+  padding: 0 0 0 10px;
 }
 
 .footer_button {
   width: 130px;
   background-color: rgb(149, 225, 211);
-  font-size: 14px;
+  font-size: 700 14px "Montserrat", sans-serif;
   line-height: 40px;
-  font-family: "Montserrat";
   color: rgb(255, 255, 255);
-  font-weight: 700;
   text-transform: uppercase;
   border: 0px;
   padding: 0px;
 }
 
 .input_style::placeholder {
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font: 15px "Roboto", sans-serif;
   color: rgb(204, 204, 204);
 }

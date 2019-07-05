@@ -1,0 +1,178 @@
+@import url(syle_reset.css);
+@import url(fonts.css);
+
+.wrap {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 2.75rem;
+  margin-bottom: 6.375rem;
+}
+
+.header__link {
+  font-size: 26px;
+  font-family: "WisdomScript";
+  color: #fed136;
+  text-decoration: none;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__menu__item {
+  display: inline-block;
+  margin-right: 2.625rem;
+}
+
+.header__menu__item:last-child {
+  margin-right: 0;
+}
+
+.header__menu__link {
+  font-size: 14px;
+  font-family: "MontserratRegular";
+  color: #222222;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__menu__link:hover {
+  color: #fed136;
+}
+
+.main__title {
+  font-size: 40px;
+  font-family: "MontserratBold";
+  color: rgb(34, 34, 34);
+  text-transform: uppercase;
+  text-align-last: center;
+  margin-bottom: 80px;
+}
+
+.main__title_span {
+  padding-top: 22px;
+  display: block;
+  font-size: 16px;
+  font-family: "DroidSerifItalic";
+  color: rgb(119, 119, 119);
+  text-transform: none;
+}
+
+.main {
+  margin-bottom: 122px;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__content__item {
+  flex-basis: 290px;
+  text-align: center;
+}
+
+.main__content__item__img {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+
+.main__content__item__img > img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.main__content__item__title {
+  display: inline-block;
+  font: 18px MontserratBold;
+  color: rgb(34, 34, 34);
+}
+
+.main__content__item__title__span {
+  display: block;
+  padding-top: 14px;
+  font: 14px RobotoSlabRegular;
+  color: rgb(119, 119, 119);
+  line-height: 1.8;
+}
+
+.contacts {
+  background: no-repeat rgb(34, 34, 34) url("../img/map.png");
+  background-position: right 0px bottom 0px;
+  text-align: center;
+}
+
+.contacts__title {
+  font: 40px MontserratBold;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding-top: 108px;
+  margin-bottom: 78px;
+}
+
+.contacts_title__span {
+  display: block;
+  text-align: center;
+  font: 16px DroidSerifItalic;
+  color: rgb(119, 119, 119);
+  text-transform: none;
+  padding-top: 20px;
+}
+
+.contacts__form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contacts__input {
+  font: 14px MontserratBold;
+  width: 290px;
+  color: rgb(187, 187, 187);
+  line-height: 52px;
+  border: 0;
+  padding: 0 10px 0 10px;
+  margin: 0 30px 30px 0;
+}
+
+.contacts__input::placeholder {
+  text-transform: uppercase;
+}
+
+.contacts__input_check:valid{
+  outline: 2px solid green;
+}
+.contacts__input_check:invalid{
+  outline: 2px solid red;
+}
+
+
+.contacts__btn {
+  border-radius: 3px;
+  padding: 0;
+  width: 240px;
+  height: 65px;
+  background-color: rgb(254, 209, 54);
+  border: none;
+  margin: 0 auto;
+  font: 18px MontserratBold;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 116px;
+}
