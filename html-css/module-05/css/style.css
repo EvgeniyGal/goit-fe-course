@@ -75,7 +75,6 @@
 
 .slider_conteiner {
   position: relative;
-  margin-bottom: 110px;
 }
 
 .slider__image{
@@ -85,7 +84,6 @@
 
 .slider__list::after{
   content: "";
-  display: block;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -97,15 +95,9 @@
 .slider-controls {
   position: absolute;
   width: 1110px;
-  bottom: 0px;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-}
-
-.slider-image {
-  object-fit: cover;
+  transform: translateX(-50%);
+  top: 50%;
+  left: 50%;
 }
 
 .slider_conteiner_item {
@@ -169,7 +161,9 @@
 /* Style main */
 
 .main_style {
+  padding-top: 110px;
   margin-bottom: 100px;
+  background-color: rgb(233, 240, 253);
 }
 
 .main_title {
