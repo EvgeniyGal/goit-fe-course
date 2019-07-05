@@ -255,7 +255,7 @@
 .footer_button {
   width: 130px;
   background-color: rgb(149, 225, 211);
-  font-size: 700 14px "Montserrat", sans-serif;
+  font: 700 14px "Montserrat", sans-serif;
   line-height: 40px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
