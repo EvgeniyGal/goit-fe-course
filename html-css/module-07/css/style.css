@@ -172,10 +172,12 @@
 
 .contacts__input::placeholder {
   text-transform: uppercase;
+  color: rgb(187, 187, 187);
 }
 
 .contacts__textarea::placeholder {
   text-transform: uppercase;
+  color: rgb(187, 187, 187);
 }
 
 .contacts__input_check:valid {
