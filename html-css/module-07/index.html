@@ -13,8 +13,8 @@
       <h1>
         <a href="#" class="header__link">Golden</a>
       </h1>
-      <nav class="header__nav">
-        <ul class="header__menu">
+      <nav>
+        <ul>
           <li class="header__menu__item">
             <a href="#" class="header__menu__link">home</a>
           </li>
@@ -85,44 +85,49 @@
     </main>
 
     <section class="contacts">
-      <div class="contacts__conteiner wrap">
-        <h2 class="contacts__title">
-          Contact us
-          <span class="contacts_title__span">
-            Proin iaculis purus consequat sem cure.
-          </span>
-        </h2>
+      <div class="wrap">
         <form class="contacts__form" action="#">
-          <input
-            class="contacts__input_check contacts__input"
-            name="userName"
-            type="text"
-            placeholder="your name *"
-            required
-            autofocus
-          />
-          <input
-            class="contacts__input_check contacts__input"
-            placeholder="your email *"
-            name="userEmail"
-            type="email"
-            required
-          />
-          <input
-            class="contacts__input"
-            placeholder="subject"
-            name="subject"
-            type="text"
-            />
+          <h2 class="contacts__title">
+            Contact us
+            <span class="contacts_title__span">
+              Proin iaculis purus consequat sem cure.
+            </span>
+          </h2>
+          <div class="contacts__inputs_cont">
+            <div class="contacts__input__box">
+              <input
+                class="contacts__input contacts__input_check contacts__input"
+                name="userName"
+                type="text"
+                placeholder="your name *"
+                required
+                autofocus
+              />
+              <input
+                class="contacts__input contacts__input_check contacts__input"
+                placeholder="your email *"
+                name="userEmail"
+                type="email"
+                required
+              />
+              <input
+                class="contacts__input"
+                placeholder="subject"
+                name="subject"
+                type="text"
+              />
+            </div>
             <textarea
-            class="contacts__input_check"
-            placeholder="message"
-            name="userMassage"
-            id="userMassage"
-            cols="30"
-            rows="10"
-            required
-          ></textarea>
+              class="contacts__textarea contacts__input_check"
+              placeholder="message *"
+              name="userMassage"
+              id="userMassage"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+
           <button class="contacts__btn" type="submit">send message</button>
         </form>
       </div>

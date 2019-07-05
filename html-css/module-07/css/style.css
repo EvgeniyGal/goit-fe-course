@@ -1,6 +1,10 @@
 @import url(syle_reset.css);
 @import url(fonts.css);
 
+:root {
+  font-size: 62.5%;
+}
+
 .wrap {
   width: 940px;
   margin: 0 auto;
@@ -9,24 +13,20 @@
 .header {
   display: flex;
   align-items: flex-end;
-  padding-top: 2.75rem;
-  margin-bottom: 6.375rem;
+  justify-content: space-between;
+  padding-top: 3.6rem;
+  margin-bottom: 10.2rem;
 }
 
 .header__link {
-  font-size: 26px;
-  font-family: "WisdomScript";
+  font: 2.6rem "WisdomScript";
   color: #fed136;
   text-decoration: none;
 }
 
-.header__nav {
-  margin-left: auto;
-}
-
 .header__menu__item {
   display: inline-block;
-  margin-right: 2.625rem;
+  margin-right: 4.2rem;
 }
 
 .header__menu__item:last-child {
@@ -34,8 +34,7 @@
 }
 
 .header__menu__link {
-  font-size: 14px;
-  font-family: "MontserratRegular";
+  font: 14px "MontserratRegular";
   color: #222222;
   text-transform: uppercase;
   text-decoration: none;
@@ -45,9 +44,12 @@
   color: #fed136;
 }
 
+.main {
+  margin-bottom: 122px;
+}
+
 .main__title {
-  font-size: 40px;
-  font-family: "MontserratBold";
+  font: 40px "MontserratBold";
   color: rgb(34, 34, 34);
   text-transform: uppercase;
   text-align-last: center;
@@ -57,14 +59,9 @@
 .main__title_span {
   padding-top: 22px;
   display: block;
-  font-size: 16px;
-  font-family: "DroidSerifItalic";
+  font: 16px "DroidSerifItalic";
   color: rgb(119, 119, 119);
   text-transform: none;
-}
-
-.main {
-  margin-bottom: 122px;
 }
 
 .main__content {
@@ -89,7 +86,6 @@
 }
 
 .main__content__item__img > img {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -99,7 +95,6 @@
 }
 
 .main__content__item__title {
-  display: inline-block;
   font: 18px MontserratBold;
   color: rgb(34, 34, 34);
 }
@@ -115,6 +110,10 @@
 .contacts {
   background: no-repeat rgb(34, 34, 34) url("../img/map.png");
   background-position: right 0px bottom 0px;
+  padding-bottom: 116px;
+}
+
+.contacts__form {
   text-align: center;
 }
 
@@ -135,33 +134,58 @@
   padding-top: 20px;
 }
 
-.contacts__form{
+.contacts__inputs_cont {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contacts__input__box {
+  width: 455px;
 }
 
 .contacts__input {
+  box-sizing: border-box;
+  width: 100%;
   font: 14px MontserratBold;
-  width: 290px;
   color: rgb(187, 187, 187);
   line-height: 52px;
   border: 0;
   padding: 0 10px 0 10px;
-  margin: 0 30px 30px 0;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.contacts__input:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__textarea {
+  box-sizing: border-box;
+  width: 455px;
+  color: rgb(187, 187, 187);
+  font: 14px MontserratBold;
+  border: 0;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .contacts__input::placeholder {
   text-transform: uppercase;
 }
 
-.contacts__input_check:valid{
-  outline: 2px solid green;
-}
-.contacts__input_check:invalid{
-  outline: 2px solid red;
+.contacts__textarea::placeholder {
+  text-transform: uppercase;
 }
 
+.contacts__input_check:valid {
+  outline-offset: -5px;
+  outline: 2px solid green;
+}
+.contacts__input_check:invalid {
+  outline-offset: -5px;
+  outline: 2px solid red;
+}
 
 .contacts__btn {
   border-radius: 3px;
@@ -174,5 +198,4 @@
   font: 18px MontserratBold;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  margin-bottom: 116px;
 }
