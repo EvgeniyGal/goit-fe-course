@@ -161,8 +161,7 @@
 /* Style main */
 
 .main_style {
-  padding-top: 110px;
-  margin-bottom: 100px;
+  padding: 110px 0 100px 0;;
   background-color: rgb(233, 240, 253);
 }
 
@@ -196,6 +195,7 @@
 .collection_item {
   position: relative;
   display: inline-block;
+  width: 255px;
   background-color: #e8effc;
   margin-right: 30px;
 }
