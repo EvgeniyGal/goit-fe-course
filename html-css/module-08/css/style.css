@@ -1,7 +1,329 @@
 @import url(syle_reset.css);
 @import url(fonts.css);
 
-:root{
-    font-size: 62.5%;
+:root {
+  font-size: 62.5%;
 }
 
+.main-conteiner {
+  position: relative;
+  width: 32rem;
+  height: 54rem;
+  background-image: url(../img/background_320_540.jpg);
+  margin: 0 auto 6.8rem auto;
+}
+
+.main-conteiner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgb(26, 25, 21);
+  opacity: 0.2;
+}
+
+.main-flex-box {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.header-logo {
+  order: 1;
+}
+
+.nav {
+  margin-bottom: 11.8rem;
+}
+
+.reg-box {
+  display: flex;
+}
+
+.reg-box__button {
+  width: 9.4rem;
+  height: 4rem;
+  padding: 0;
+  border: none;
+  border-radius: 2rem;
+  font: bold 1.4rem "Montserrat";
+  color: rgb(255, 255, 255);
+  background: none;
+  cursor: pointer;
+}
+
+.reg-box__button:hover {
+  border: 0.2rem solid #fff;
+}
+
+.header-logo__link {
+  font: bold 2rem "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.section-title {
+  padding-top: 3.6rem;
+  text-align: center;
+  font: bold 3rem "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+.section-title__text {
+  display: block;
+  padding-top: 1.6rem;
+  font: 300 1.8rem "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: none;
+}
+
+.find-link {
+  display: block;
+  border-radius: 2rem;
+  background-color: rgb(255, 78, 80);
+  width: 28rem;
+  height: 4rem;
+  border: none;
+  font: bold 1.4rem "Montserrat";
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.find-link:hover {
+  box-shadow: 0px 1.5rem 1.5rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-0.5rem);
+  transition: transform 0.2s linear;
+}
+
+.partners-box {
+  width: 30rem;
+  margin: 0 auto 5.8rem auto;
+}
+
+.patners-box__title {
+  font: bold 2.2rem "Montserrat";
+  color: rgb(51, 51, 51);
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.partners-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.mask-circule {
+  clip-path: circle(6.1rem at center);
+}
+
+.partners-list__item {
+  width: 23.6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.partners-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.partners-list__img-box {
+  display: inline-block;
+  position: relative;
+}
+
+.partners-list__item__title {
+  font: bold 1.4rem "Montserrat";
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.partners-list__item__text {
+  display: block;
+  font: 300 1.4rem "Roboto";
+  color: rgb(102, 102, 102);
+  padding-top: 1.8rem;
+}
+
+.tv-style {
+  position: absolute;
+  display: block;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  border: 0.4rem solid #fff;
+  background: rgb(255, 78, 80) url("../img/icon/tv.png") no-repeat center center;
+  right: 0;
+  bottom: 0;
+}
+
+.bottle-style {
+  position: absolute;
+  display: block;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  border: 0.4rem solid #fff;
+  background: rgb(255, 165, 7) url("../img/icon/botle.png") no-repeat center
+    center;
+  right: 0;
+  bottom: 0;
+}
+
+.cupoftea-style {
+  position: absolute;
+  display: block;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  border: 0.4rem solid #fff;
+  background: rgb(28, 215, 173) url("../img/icon/capoftea.png") no-repeat center
+    center;
+  right: 0;
+  bottom: 0;
+}
+
+.telegram-style {
+  position: absolute;
+  display: block;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  border: 0.4rem solid #fff;
+  background: rgb(78, 115, 219) url("../img/icon/telegram.png") no-repeat center
+    center;
+  right: 0;
+  bottom: 0;
+}
+
+.other-partner-link {
+  display: block;
+  border: 0.2rem solid rgb(255, 78, 80);
+  border-radius: 2rem;
+  width: 28rem;
+  height: 4rem;
+  font: bold 1.4rem "Montserrat";
+  color: rgb(255, 78, 80);
+  text-decoration: none;
+  text-align: center;
+  line-height: 4rem;
+  margin: 0 auto;
+}
+
+.other-partner-link:hover {
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  transition: transform 0.2s linear;
+}
+
+@media screen and (min-width: 768px) {
+  .main-conteiner {
+    width: 76.8rem;
+    height: 70rem;
+    background-image: url(../img/background_768_700.jpg);
+    margin: 0 auto 7.4rem auto;
+  }
+
+  .main-flex-box {
+    width: 66.8rem;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.8rem;
+  }
+
+  .nav {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    width: 53.2rem;
+    padding-top: 14.8rem;
+    font-size: 5.2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 3.8rem;
+  }
+
+  .section-title__text {
+    padding-top: 3.6rem;
+    font-size: 2.2rem;
+  }
+
+  .partners-box {
+    width: 49.2rem;
+    margin: 0 auto 4rem auto;
+  }
+
+  .patners-box__title {
+    font: bold 2.2rem "Montserrat";
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin-bottom: 3.6rem;
+  }
+
+  .partners-list {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+  }
+
+  .partners-list__item {
+    margin-bottom: 5.8rem;
+  }
+
+  .partners-list__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-conteiner {
+    width: 100%;
+    background-image: url(../img/background_1440_700.jpg);
+    background-size: cover;
+    margin: 0 0 7.2rem 0;
+  }
+
+  .main-flex-box {
+    width: 94.2rem;
+  }
+
+  .partners-box {
+    width: 94.2rem;
+  }
+
+  .partners-list__item {
+    width: 22.2rem;
+    margin-bottom: 0rem;
+  }
+}
