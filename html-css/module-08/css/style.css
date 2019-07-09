@@ -137,7 +137,8 @@
 }
 
 .mask-circule {
-  clip-path: circle(6.1rem at center);
+  display: block;
+  clip-path: circle(50% at center);
 }
 
 .partners-list__item {
