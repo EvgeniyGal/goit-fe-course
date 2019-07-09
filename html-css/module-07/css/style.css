@@ -53,15 +53,16 @@
   color: rgb(34, 34, 34);
   text-transform: uppercase;
   text-align-last: center;
-  margin-bottom: 80px;
 }
 
-.main__title__span {
+.main__title__text {
   padding-top: 22px;
   display: block;
   font: 16px "DroidSerifItalic";
   color: rgb(119, 119, 119);
   text-transform: none;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .main__content {
@@ -99,7 +100,7 @@
   color: rgb(34, 34, 34);
 }
 
-.main__content__item__title__span {
+.main__content__item__title__text {
   display: block;
   padding-top: 14px;
   font: 14px RobotoSlabRegular;
@@ -122,16 +123,16 @@
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   padding-top: 108px;
-  margin-bottom: 78px;
 }
 
-.contacts_title__span {
+.contacts_title__text {
   display: block;
   text-align: center;
   font: 16px DroidSerifItalic;
   color: rgb(119, 119, 119);
   text-transform: none;
   padding-top: 20px;
+  margin-bottom: 78px;
 }
 
 .contacts__inputs-cont {
@@ -180,11 +181,11 @@
   color: rgb(187, 187, 187);
 }
 
-.contacts__input_check:valid {
+.contacts__input:active .contacts__input_check:valid {
   outline-offset: -5px;
   outline: 2px solid green;
 }
-.contacts__input_check:invalid {
+.contacts__input:active .contacts__input_check:invalid {
   outline-offset: -5px;
   outline: 2px solid red;
 }

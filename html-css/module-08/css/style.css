@@ -65,7 +65,7 @@
   border-radius: 2rem;
   font: bold 1.4rem "Montserrat";
   color: rgb(255, 255, 255);
-  border: 0.2rem solid rgba(255,255, 255, 0);
+  border: 0.2rem solid rgba(255, 255, 255, 0);
   background: none;
   text-decoration: none;
   text-align: center;
@@ -73,8 +73,8 @@
 }
 
 .reg-box__button:hover {
-  border-color: rgba(255,255, 255, 1);
-  transition: border-color .2s linear;
+  border-color: rgba(255, 255, 255, 1);
+  transition: border-color 0.2s linear;
 }
 
 .header-logo__link {
@@ -90,7 +90,6 @@
   font: bold 3rem "Montserrat";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  margin-bottom: 1.8rem;
 }
 
 .section-title__text {
@@ -99,6 +98,7 @@
   font: 300 1.8rem "Roboto";
   color: rgb(255, 255, 255);
   text-transform: none;
+  margin-bottom: 1.8rem;
 }
 
 .find-link {
@@ -118,7 +118,7 @@
 .find-link:hover {
   box-shadow: 0px 1.5rem 1.5rem rgba(0, 0, 0, 0.4);
   transform: translateY(-0.5rem);
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 
 .partners-box {
@@ -243,7 +243,7 @@
 .other-partner-link:hover {
   box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
   transform: translateY(-5px);
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -275,12 +275,12 @@
     padding-top: 14.8rem;
     font-size: 5.2rem;
     color: rgb(255, 255, 255);
-    margin-bottom: 3.8rem;
   }
 
   .section-title__text {
     padding-top: 3.6rem;
     font-size: 2.2rem;
+    margin-bottom: 3.8rem;
   }
 
   .partners-box {
