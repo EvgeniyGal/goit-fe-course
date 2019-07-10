@@ -56,23 +56,28 @@
   display: flex;
 }
 
-.reg-box__button {
+.reg-box__link,
+.find-link,
+.other-partner-link{
   display: block;
-  width: 9.4rem;
   height: 4rem;
   padding: 0;
-  border: none;
   border-radius: 2rem;
   font: bold 1.4rem "Montserrat";
-  color: rgb(255, 255, 255);
-  border: 0.2rem solid rgba(255, 255, 255, 0);
-  background: none;
   text-decoration: none;
   text-align: center;
   line-height: 4rem;
 }
 
-.reg-box__button:hover {
+
+.reg-box__link {
+  width: 9.4rem;
+  color: rgb(255, 255, 255);
+  border: 0.2rem solid rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.reg-box__link:hover {
   border-color: rgba(255, 255, 255, 1);
   transition: border-color 0.2s linear;
 }
@@ -102,17 +107,11 @@
 }
 
 .find-link {
-  display: block;
-  border-radius: 2rem;
   background-color: rgb(255, 78, 80);
   width: 28rem;
   height: 4rem;
   border: none;
-  font: bold 1.4rem "Montserrat";
   color: rgb(255, 255, 255);
-  text-decoration: none;
-  text-align: center;
-  line-height: 4rem;
 }
 
 .find-link:hover {
@@ -175,44 +174,9 @@
   padding-top: 1.8rem;
 }
 
-.tv-style {
-  position: absolute;
-  display: block;
-  width: 3.4rem;
-  height: 3.4rem;
-  border-radius: 50%;
-  border: 0.4rem solid #fff;
-  background: rgb(255, 78, 80) url("../img/icon/tv.png") no-repeat center center;
-  right: 0;
-  bottom: 0;
-}
-
-.bottle-style {
-  position: absolute;
-  display: block;
-  width: 3.4rem;
-  height: 3.4rem;
-  border-radius: 50%;
-  border: 0.4rem solid #fff;
-  background: rgb(255, 165, 7) url("../img/icon/botle.png") no-repeat center
-    center;
-  right: 0;
-  bottom: 0;
-}
-
-.cupoftea-style {
-  position: absolute;
-  display: block;
-  width: 3.4rem;
-  height: 3.4rem;
-  border-radius: 50%;
-  border: 0.4rem solid #fff;
-  background: rgb(28, 215, 173) url("../img/icon/capoftea.png") no-repeat center
-    center;
-  right: 0;
-  bottom: 0;
-}
-
+.tv-style,
+.bottle-style,
+.cupoftea-style,
 .telegram-style {
   position: absolute;
   display: block;
@@ -220,23 +184,32 @@
   height: 3.4rem;
   border-radius: 50%;
   border: 0.4rem solid #fff;
-  background: rgb(78, 115, 219) url("../img/icon/telegram.png") no-repeat center
-    center;
   right: 0;
   bottom: 0;
 }
+.tv-style {
+  background: rgb(255, 78, 80) url("../img/icon/tv.png") no-repeat center center;
+}
+
+.bottle-style {
+  background: rgb(255, 165, 7) url("../img/icon/botle.png") no-repeat center
+    center;
+}
+
+.cupoftea-style {
+  background: rgb(28, 215, 173) url("../img/icon/capoftea.png") no-repeat center
+    center;
+}
+
+.telegram-style {
+  background: rgb(78, 115, 219) url("../img/icon/telegram.png") no-repeat center
+    center;
+}
 
 .other-partner-link {
-  display: block;
   border: 0.2rem solid rgb(255, 78, 80);
-  border-radius: 2rem;
   width: 28rem;
-  height: 4rem;
-  font: bold 1.4rem "Montserrat";
   color: rgb(255, 78, 80);
-  text-decoration: none;
-  text-align: center;
-  line-height: 4rem;
   margin: 0 auto;
 }
 
