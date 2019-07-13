@@ -7,10 +7,11 @@
 
 .main-conteiner {
   position: relative;
-  width: 32rem;
-  height: 54rem;
-  background-image: url(../img/background_320_540.jpg);
-  margin: 0 auto 6.8rem auto;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/background_320_540.jpg") no-repeat center center;
+  background-size: cover;
+  margin-bottom: 6.8rem;
 }
 
 .main-conteiner::after {
@@ -24,7 +25,7 @@
 }
 
 .main-flex-box {
-  width: 30rem;
+  width: 93.75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +59,7 @@
 
 .reg-box__link,
 .find-link,
-.other-partner-link{
+.other-partner-link {
   display: block;
   height: 4rem;
   padding: 0;
@@ -68,7 +69,6 @@
   text-align: center;
   line-height: 4rem;
 }
-
 
 .reg-box__link {
   width: 9.4rem;
@@ -121,7 +121,7 @@
 }
 
 .partners-box {
-  width: 30rem;
+  width: 93.75%;
   margin: 0 auto 5.8rem auto;
 }
 
@@ -167,6 +167,10 @@
   padding-top: 2rem;
 }
 
+.link--nodeco{
+  text-decoration: none;
+}
+
 .partners-list__item__text {
   display: block;
   font: 300 1.4rem "Roboto";
@@ -174,12 +178,13 @@
   padding-top: 1.8rem;
 }
 
-.tv-style,
-.bottle-style,
-.cupoftea-style,
-.telegram-style {
+.icon > img {
+  vertical-align: middle;
+}
+
+.icon {
   position: absolute;
-  display: block;
+  line-height: 3.4rem;
   width: 3.4rem;
   height: 3.4rem;
   border-radius: 50%;
@@ -187,23 +192,21 @@
   right: 0;
   bottom: 0;
 }
-.tv-style {
-  background: rgb(255, 78, 80) url("../img/icon/tv.png") no-repeat center center;
+
+.icon-bg--red {
+  background-color: rgb(255, 78, 80);
 }
 
-.bottle-style {
-  background: rgb(255, 165, 7) url("../img/icon/botle.png") no-repeat center
-    center;
+.icon-bg--yellow {
+  background-color: rgb(255, 165, 7);
 }
 
-.cupoftea-style {
-  background: rgb(28, 215, 173) url("../img/icon/capoftea.png") no-repeat center
-    center;
+.icon-bg--green {
+  background-color: rgb(28, 215, 173);
 }
 
-.telegram-style {
-  background: rgb(78, 115, 219) url("../img/icon/telegram.png") no-repeat center
-    center;
+.icon-bg--purple {
+  background-color: rgb(78, 115, 219);
 }
 
 .other-partner-link {
@@ -219,16 +222,37 @@
   transition: transform 0.2s linear;
 }
 
+@media screen and (orientation: landscape) and (max-height: 420px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.8rem;
+  }
+
+  .nav {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .partners-list {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main-conteiner {
-    width: 76.8rem;
+    width: 100vw;
     height: 70rem;
     background-image: url(../img/background_768_700.jpg);
-    margin: 0 auto 7.4rem auto;
+    margin-bottom: 7.4rem;
   }
 
   .main-flex-box {
-    width: 66.8rem;
+    width: 86.98%;
   }
 
   .header {
@@ -287,7 +311,8 @@
 
 @media screen and (min-width: 1440px) {
   .main-conteiner {
-    width: 100%;
+    width: 100vw;
+    height: 70rem;
     background-image: url(../img/background_1440_700.jpg);
     background-size: cover;
     margin: 0 0 7.2rem 0;
