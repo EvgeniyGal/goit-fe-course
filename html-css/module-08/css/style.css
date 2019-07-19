@@ -282,6 +282,11 @@
   .partners-list__item:nth-last-child(2) {
     margin-bottom: 0;
   }
+
+  .find-link,
+  .other-partner-link {
+    width: 22.6rem;
+  }
 }
 
 @media screen and (min-width: 942px) {
