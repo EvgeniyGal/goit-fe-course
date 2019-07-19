@@ -1,12 +1,78 @@
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"),
-    url("../fonts/montserrat-v13-cyrillic_latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v13-cyrillic_latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+@import url(bootstrap.min.css);
+
+.color--red {
+  background-color: red;
+  height: 9rem;
 }
 
+.pad{
+  margin: 10px;
+}
 
+.col-12{
+  
+  margin: 10px;
+}
 
+.color--green {
+  background-color: green;
+  height: 9rem;
+}
+.color--pink {
+  background-color: pink;
+  height: 9rem;
+}
+.color--purple {
+  background-color: purple;
+  height: 9rem;
+}
+.color--yellow {
+  background-color: yellow;
+  height: 9rem;
+}
+
+@media (min-width: 768px) {
+
+  .color--red {
+    height: 15rem;
+  }
+  
+  .color--green {
+    height: 15rem;
+  }
+
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: black;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px 100px 100px 100px;
+  padding: 10px;
+}
+
+.red{
+  background-color: red;
+  grid-area: 1 / 1 / 3 / 3;
+}
+.green{
+  background-color: green;
+  grid-column: 3 / span 2;
+}
+.yellow{
+  background-color: yellow;
+}
+.blueviolet{
+  background-color: blueviolet;
+  grid-row: 2 / span 3;
+}
+
+.gray{
+  background-color: gray;
+  grid-area: 3 / 2 / 5 / 4;
+}
+.brown{
+  background-color: brown;
+  grid-row: 3 / span 2;
+}
