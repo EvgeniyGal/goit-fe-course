@@ -1,0 +1,238 @@
+@import url(lib/normalize.css);
+@import url(fonts.css);
+@import url(vars.css);
+
+:root {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.header-baner {
+  width: 100%;
+  height: 100rem;
+  background-image: var(--main-gradient), url(../img/eagle_1920_1000.png);
+  background-size: cover;
+  margin-bottom: 4.8rem;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header-baner {
+    background-image: var(--main-gradient), url(../img/eagle_3840_2000.png);
+  }
+}
+
+.logo-holder {
+  margin: 0;
+}
+
+.logo-holder_link {
+  font: bold 3rem Montserrat;
+  color: var(--color-font-light);
+  text-decoration: none;
+}
+
+.top-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 3rem;
+  margin-bottom: 15rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  display: inline-block;
+  margin: 0 4.9rem 0.6rem 0;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.link-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: var(--color-font-light);
+}
+
+.menu__item__link {
+  font: 1.4rem Montserrat;
+  color: var(--color-font-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 0.4rem solid rgba(252, 227, 138, 0);
+  padding-bottom: 1rem;
+}
+
+.menu__item__link:hover {
+  color: var(--color-hover);
+  border-bottom-color: rgba(252, 227, 138, 1);
+  transition: all 0.2s linear;
+}
+
+.link-icon:hover {
+  fill: var(--color-hover);
+  transition: all 0.2s linear;
+}
+
+.baner-title {
+  font: 7.2rem Kaushan Script;
+  color: var(--color-font-light);
+  text-align: center;
+  margin-bottom: 11rem;
+}
+
+.baner-title__descr {
+  display: block;
+  font: bold 15rem Montserrat;
+  text-transform: uppercase;
+  line-height: 0.933;
+  padding: 2.7rem 18rem 0 18rem;
+  letter-spacing: -.6rem;
+}
+
+.baner-link-btn {
+  display: block;
+  font: bold 1.4rem Montserrat;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: 4.4rem;
+  color: var(--color-font-light);
+  border: 0.3rem solid var(--color-font-light);
+  width: 15.6rem;
+  height: 3.4rem;
+  margin: 0 auto;
+}
+
+.section-tilte {
+  font: 2.4rem Kaushan Script;
+  color: var(--color-font-dark);
+  text-align: center;
+  margin: 0 0 6.1rem 0;
+}
+
+.section-tilte__descr {
+  display: block;
+  font: bold 3rem Montserrat;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.section-tilte::after {
+  content: "";
+  background-clip: content-box;
+  display: block;
+  padding-top: 3.5rem;
+  width: 6rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  background-color: var(--color-decor);
+}
+
+.content-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content-box__item {
+  display: flex;
+  margin-bottom: 9.5rem;
+}
+
+.content-box__item:nth-last-of-type(-n + 3) {
+  margin-bottom: 0;
+}
+
+.content-box__item__icon {
+  width: 8.2rem;
+  text-align: center;
+}
+
+.content-box__item__icon--style {
+  display: inline-block;
+  width: 3.2rem;
+  fill: var(--color-service-icon);
+  margin: 0 auto;
+}
+
+.content-box__item__descr-box {
+  width: 30rem;
+}
+
+.content-title {
+  font: bold 1.4rem Montserrat;
+  color: var(--color-font-dark);
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.05rem;
+}
+
+.content-text {
+  font: 1.5rem Roboto;
+  color: var(--color-font-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.section-service {
+  margin-bottom: 8.3rem;
+}
+
+.content-text--full-page {
+  text-align: center;
+  width: 81.16%;
+  margin: -2.2rem auto 9rem auto;
+}
+
+.team-box {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.team-box__item {
+}
+
+.text-center-nodeco {
+  text-decoration: none;
+  text-align: center;
+}
+
+.figure-holder {
+  margin: 0;
+  font-size: 0;
+}
+
+.figure-holder__img {
+  position: relative;
+  height: 47rem;
+  margin: 0 0 2.6rem 0;
+  background-color: var(--color-background-img);
+}
+
+.grad-shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-gradient);
+  margin: 0;
+}
