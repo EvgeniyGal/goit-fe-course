@@ -2,10 +2,12 @@
   --color-font-light: #fff;
   --color-font-dark: #333333;
   --color-font-text: #999999;
+  --color-placeholder: rgb(204, 204, 204);
   --color-hover: #fce38a;
   --color-decor: rgb(243, 129, 129);
   --color-service-icon: rgb(149, 225, 211);
   --color-background-img: rgb(149, 225, 211);
+  --color-border: rgb(229, 229, 229);
   --main-gradient: linear-gradient(
     0deg,
     rgba(252, 227, 138, 0.9) 0%,

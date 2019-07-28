@@ -12,7 +12,7 @@
       <div class="container">
         <div class="top-group">
           <h1 class="logo-holder">
-            <a href="#" class="logo-holder_link">MoGo</a>
+            <a href="#" class="logo-holder__link">MoGo</a>
           </h1>
           <nav>
             <ul class="menu">
@@ -57,7 +57,7 @@
         <a href="#" class="baner-link-btn">Learn more</a>
       </div>
     </header>
-    <main class="container">
+    <main class="main-box-offset container">
       <section class="section-service">
         <h2 class="section-tilte">
           We work with
@@ -69,7 +69,7 @@
           <li class="content-box__item">
             <div class="content-box__item__icon">
               <svg viewbox="0 0 32 32" class="content-box__item__icon--style">
-                <use xlink:href="img/service_icon_sprite copy.svg#alarm" />
+                <use xlink:href="img/service_icon_sprite.svg#alarm" />
               </svg>
             </div>
             <div class="content-box__item__descr-box">
@@ -85,7 +85,7 @@
           <li class="content-box__item">
             <div class="content-box__item__icon">
               <svg viewbox="0 0 32 32" class="content-box__item__icon--style">
-                <use xlink:href="img/service_icon_sprite copy.svg#graph" />
+                <use xlink:href="img/service_icon_sprite.svg#graph" />
               </svg>
             </div>
             <div class="content-box__item__descr-box">
@@ -101,7 +101,7 @@
           <li class="content-box__item">
             <div class="content-box__item__icon">
               <svg viewbox="0 0 32 32" class="content-box__item__icon--style">
-                <use xlink:href="img/service_icon_sprite copy.svg#computer" />
+                <use xlink:href="img/service_icon_sprite.svg#computer" />
               </svg>
             </div>
             <div class="content-box__item__descr-box">
@@ -117,7 +117,7 @@
           <li class="content-box__item">
             <div class="content-box__item__icon">
               <svg viewbox="0 0 32 32" class="content-box__item__icon--style">
-                <use xlink:href="img/service_icon_sprite copy.svg#book" />
+                <use xlink:href="img/service_icon_sprite.svg#book" />
               </svg>
             </div>
             <div class="content-box__item__descr-box">
@@ -133,7 +133,7 @@
           <li class="content-box__item">
             <div class="content-box__item__icon">
               <svg viewbox="0 0 32 32" class="content-box__item__icon--style">
-                <use xlink:href="img/service_icon_sprite copy.svg#home" />
+                <use xlink:href="img/service_icon_sprite.svg#home" />
               </svg>
             </div>
             <div class="content-box__item__descr-box">
@@ -149,7 +149,7 @@
           <li class="content-box__item">
             <div class="content-box__item__icon">
               <svg viewbox="0 0 32 32" class="content-box__item__icon--style">
-                <use xlink:href="img/service_icon_sprite copy.svg#image" />
+                <use xlink:href="img/service_icon_sprite.svg#image" />
               </svg>
             </div>
             <div class="content-box__item__descr-box">
@@ -176,33 +176,253 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <ul class="team-box text-center-nodeco">
-          <li>
-            <a href="#" class="text-center-nodeco">
-              <figure class="figure-holder">
-                <picture class="figure-holder__img">
-                  <source srcset="img/team_member_1_760_940.png 2x" />
-                  <img
-                    srcset="img/team_member_1_380_470.png"
-                    alt="First team member"
-                  />
-                  <div class="grad-shadow">
-                    
-                  </div>
-                </picture>
-                <figcaption>
-                  <h3 class="content-title ">
-                    Matthew Dix
-                  </h3>
-                  <p class="content-text ">
-                    Graphic Design
-                  </p>
-                </figcaption>
-              </figure>
-            </a>
+        <ul class="team-box">
+          <li class="team-box__item">
+            <figure class="team-box__figure--nomarging">
+              <div class="img-container">
+                <div class="img-container__picture moove-content">
+                  <picture class="figure-holder__image">
+                    <source
+                      srcset="
+                        img/team_member_1.png,
+                        img/team_member_1@x2.png 2x
+                      "
+                    />
+                    <img srcset="img/team_member_1.png" alt="Team member 1" />
+                  </picture>
+                  <ul class="team-menu team-menu--visible">
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#facebook"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#twitter"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#pinterest"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#instagram"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <figcaption>
+                <h3 class="content-title">
+                  Matthew Dix
+                </h3>
+                <p class="content-text  content-text-italic">
+                  Graphic Design
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="team-box__item">
+            <figure class="team-box__figure--nomarging">
+              <div class="img-container">
+                <div class="img-container__picture moove-content">
+                  <picture class="figure-holder__image">
+                    <source
+                      srcset="
+                        img/team_member_2.png,
+                        img/team_member_2@x2.png 2x
+                      "
+                    />
+                    <img srcset="img/team_member_2.png" alt="Team member 2" />
+                  </picture>
+                  <ul class="team-menu team-menu--visible">
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#facebook"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#twitter"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#pinterest"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#instagram"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <figcaption>
+                <h3 class="content-title">
+                  Christopher Campbell
+                </h3>
+                <p class="content-text content-text-italic">
+                  Branding/UX design
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="team-box__item">
+            <figure class="team-box__figure--nomarging">
+              <div class="img-container">
+                <div class="img-container__picture moove-content">
+                  <picture class="figure-holder__image">
+                    <source
+                      srcset="
+                        img/team_member_3.png,
+                        img/team_member_3@x2.png 2x
+                      "
+                    />
+                    <img srcset="img/team_member_3.png" alt="Team member 3" />
+                  </picture>
+                  <ul class="team-menu team-menu--visible">
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#facebook"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#twitter"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#pinterest"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-menu__item">
+                      <a href="#" class="team-menu__item__link">
+                        <svg
+                          viewbox="0 0 30 30"
+                          class="team-menu__item__link__icon team-menu__item__link__icon--fill-light"
+                        >
+                          <use
+                            xlink:href="img/social_icon_sprite.svg#instagram"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <figcaption>
+                <h3 class="content-title">
+                  Michael Fertig
+                </h3>
+                <p class="content-text  content-text-italic">
+                  Developer
+                </p>
+              </figcaption>
+            </figure>
           </li>
         </ul>
       </section>
     </main>
+    <footer class="main-footer container">
+      <p class="main-footer__text">
+        © 2016 MoGo free PSD template by
+        <a href="#" class="main-footer__link">
+          Laaqiq
+        </a>
+      </p>
+      <form action="#" class="footer-form">
+        <input
+          type="email"
+          class="footer-form__input"
+          name="userEmail"
+          autofocus
+          required
+          placeholder="Your Email..."
+        />
+        <button class="footer-form__btn">Subscribe</button>
+      </form>
+    </footer>
   </body>
 </html>

@@ -20,7 +20,7 @@
   margin-bottom: 4rem;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header-baner {
     background-image: var(--main-gradient), url(../img/eagle@2x.png);
   }
@@ -30,22 +30,16 @@
   margin: 0;
 }
 
-.logo-holder__link {
+.logo-holder_link {
   font: 700 3rem Montserrat;
   color: var(--color-font-light);
   text-decoration: none;
 }
 
 .top-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   padding-top: 2.2rem;
   margin-bottom: 15rem;
 }
@@ -83,15 +77,11 @@
 .menu__item__link:hover {
   color: var(--color-hover);
   border-bottom-color: rgba(252, 227, 138, 1);
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
 .link-icon:hover {
   fill: var(--color-hover);
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
@@ -128,8 +118,6 @@
 .baner-link-btn:hover {
   color: var(--color-hover);
   border-color: var(--color-hover);
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
@@ -160,21 +148,15 @@
 }
 
 .content-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .content-box__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 9.5rem;
 }
@@ -230,12 +212,8 @@
 
 .team-box {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -259,31 +237,19 @@
 }
 
 .team-box__item:hover .moove-content {
-  -webkit-transform: translate(-1rem, -1rem);
-      -ms-transform: translate(-1rem, -1rem);
-          transform: translate(-1rem, -1rem);
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
+  transform: translate(-1rem, -1rem);
   transition: all 0.2s linear;
 }
 
 .team-box__item:hover .team-menu--visible {
   opacity: 1;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
 .team-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -313,15 +279,11 @@
 
 .team-menu__item:hover {
   background-color: var(--color-decor);
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
 .team-menu__item:hover .team-menu__item__link__icon--fill-light {
   fill: var(--color-font-light);
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
@@ -338,17 +300,11 @@
 }
 
 .main-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 6rem;
   border-top: 0.2rem solid var(--color-border);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-footer__text {
@@ -364,24 +320,6 @@
 
 .footer-form {
   font-size: 0;
-}
-
-.footer-form__input::-webkit-input-placeholder {
-  font: italic 300 1.5rem Roboto;
-  line-height: 1.6;
-  color: var(--color-placeholder);
-}
-
-.footer-form__input:-ms-input-placeholder {
-  font: italic 300 1.5rem Roboto;
-  line-height: 1.6;
-  color: var(--color-placeholder);
-}
-
-.footer-form__input::-ms-input-placeholder {
-  font: italic 300 1.5rem Roboto;
-  line-height: 1.6;
-  color: var(--color-placeholder);
 }
 
 .footer-form__input::placeholder {
@@ -421,8 +359,6 @@
 }
 
 .footer-form__btn:hover {
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   background-color: var(--color-hover);
 }
