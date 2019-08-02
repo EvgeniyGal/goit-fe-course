@@ -1,0 +1,22 @@
+/*
+   Import partials below
+*/
+@import 'base/normalize';
+
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'components/buttons';
+@import 'components/containers';
+@import 'components/logo';
+@import 'components/main-menu';
+
+
+@import 'layout/header';
+@import 'layout/forms';
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/sections';
+

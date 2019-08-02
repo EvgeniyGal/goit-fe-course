@@ -1,0 +1,57 @@
+.footer-form {
+  font-size: 0;
+
+  &__input {
+    @include font-style-generator(
+      (Roboto, sans-serif),
+      1.5rem,
+      $weight: 300,
+      $style: italic,
+      $color: $color-font-dark
+    );
+    width: 23.4rem;
+    height: 3.8rem;
+    border: 0.1rem solid $color-border;
+    padding: 0 0 0 1rem;
+    outline: none;
+
+    &::placeholder {
+      @include font-style-generator(
+        (Roboto, sans-serif),
+        1.5rem,
+        $weight: 300,
+        $style: italic,
+        $color: $color-placeholder
+      );
+    }
+
+    &:focus:invalid {
+      outline: 0.1rem solid red;
+    }
+
+    &:focus:valid {
+      outline: 0.1rem solid green;
+    }
+  }
+
+  &__btn {
+    width: 15rem;
+    height: 4rem;
+    background-color: $color-service-icon;
+    border: none;
+    @include font-style-generator(
+      (Montserrat, sans-serif),
+      1.4rem,
+      $weight: 700,
+      $transform: uppercase,
+      $color: $color-font-light
+    );
+    padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      transition: $basic-transition;
+      background-color: $color-hover;
+    }
+  }
+}

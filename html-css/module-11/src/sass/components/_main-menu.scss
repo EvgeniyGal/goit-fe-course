@@ -1,0 +1,43 @@
+.main-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    display: inline-block;
+    margin: 0 4.9rem 0.6rem 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__link {
+      @include font-style-generator(
+        (Montserrat, sans-serif),
+        1.4rem,
+        $decor: none,
+        $transform: uppercase,
+        $color: $color-font-light
+      );
+      border-bottom: 0.4rem solid colorToColorTransp($color-hover, 0);
+      padding-bottom: 1rem;
+
+      &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: $color-font-light;
+      }
+
+      &:hover {
+        color: $color-hover;
+        border-bottom-color: colorToColorTransp($color-hover, 1);
+        transition: $basic-transition;
+      }
+
+      &:hover &__icon {
+        fill: $color-hover;
+        transition: $basic-transition;
+      }
+    }
+  }
+}

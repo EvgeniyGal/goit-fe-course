@@ -1,0 +1,13 @@
+.logo {
+  margin: 0;
+  
+  &__link {
+    @include font-style-generator(
+      (Montserrat, sans-serif),
+      3rem,
+      $weight: 700,
+      $color: $color-font-light,
+      $decor: none
+    );
+  }
+}

@@ -1,0 +1,23 @@
+@mixin font-style-generator(
+  $type-list,
+  $size,
+  $weight: null,
+  $style: null,
+  $decor: null,
+  $transform: null,
+  $color: null,
+  $line-height: null,
+  $letter-spacing: null,
+  $t-align: null
+) {
+  @if $line-height == null {
+    font: $style $weight $size $type-list;
+  } @else {
+    font: $style $weight $size unquote('/') $line-height $type-list;
+  }
+  text-decoration: $decor;
+  text-transform: $transform;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  text-align: $t-align;
+}

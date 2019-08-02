@@ -1,0 +1,23 @@
+.link-btn {
+  display: block;
+  @include font-style-generator(
+    (Montserrat, sans-serif),
+    1.4rem,
+    $weight: 700,
+    $line-height: 3.4rem,
+    $decor: none,
+    $transform: uppercase,
+    $t-align: center,
+    $color: $color-font-light
+  );
+  border: 0.3rem solid $color-font-light;
+  width: 15.6rem;
+  height: 3.4rem;
+  margin: 0 auto;
+
+  &:hover {
+    color: $color-hover;
+    border-color: $color-hover;
+    transition: $basic-transition;
+  }
+}
